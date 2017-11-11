@@ -1,0 +1,35 @@
+Started GET "/" for 127.0.0.1 at 2017-11-10 18:43:51 +0100
+Processing by HomeController#index as HTML
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 1434ms (Views: 1151.2ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-11-10 18:44:06 +0100
+Processing by HomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rFIC8AHl6UC6fQxgY+VztQ1cbSrDxxBjcBrTUCmmIfgH7+PDozZOlkPH3FG1Z18kD7iOUK83UXlA6eEFUMkQhA==", "tweet"=>"bisous du tweet salut les loulou houloulou", "commit"=>"Tweeter moi allez vazi j'aime bien!!!"}
+Completed 500 Internal Server Error in 13ms
+
+
+  
+NameError (undefined local variable or method `client' for #<SendTweet:0x007fafd9895ec8>
+Did you mean?  @client):
+  
+app/services/send_tweet.rb:19:in `perform'
+app/controllers/home_controller.rb:9:in `create'
+Started POST "/" for 127.0.0.1 at 2017-11-10 18:45:52 +0100
+Processing by HomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rFIC8AHl6UC6fQxgY+VztQ1cbSrDxxBjcBrTUCmmIfgH7+PDozZOlkPH3FG1Z18kD7iOUK83UXlA6eEFUMkQhA==", "tweet"=>"bisous du tweet salut les loulou houloulou", "commit"=>"Tweeter moi allez vazi j'aime bien!!!"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 1269ms (Views: 288.8ms)
+
+
+Started POST "/" for 127.0.0.1 at 2017-11-10 18:46:07 +0100
+Processing by HomeController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"7OnbVzZbp5Wu2H+HdkKc6yP8TNTny3JL0tfs3C2pINZHVDpklIgAQ1dir7agwLB6IRivros7M1HiJN6JVMYRqg==", "tweet"=>"hello les loulou, coucou, salut ", "commit"=>"Tweeter moi allez vazi j'aime bien!!!"}
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 786ms (Views: 30.7ms)
+
+

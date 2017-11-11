@@ -1,0 +1,5 @@
+<h1> Super Formulaire Twitter </h1>
+
+<%= form_tag "/", method: "post" %>
+<%= text_field_tag( :tweet , 'met ton tweet ici bisous ', options={:maxlength => 160})  %>
+<%= submit_tag(value = "Tweeter moi allez vazi j'aime bien!!!") %>
